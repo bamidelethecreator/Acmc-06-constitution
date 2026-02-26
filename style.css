@@ -46,8 +46,9 @@ a {
   line-height: 1.15;
 }
 
-.toc{
+.toc {
   line-height: 2;
+  text-align: justify;
 }
 
 /* Keep content above watermark */
@@ -265,7 +266,7 @@ nav a:focus-visible {
 .article section,
 .preamble section {
   margin-top: 0;
-  line-height: 1.8;
+  line-height: 24px;
 }
 
 .article p,
@@ -276,9 +277,10 @@ nav a:focus-visible {
 
 .article h1,
 .preamble h1,
-.toc {
+.toc h1 {
   margin-top: 0;
   color: #0a4da2;
+  text-align: center ;
 }
 .article h3,
 .preamble h3 {
