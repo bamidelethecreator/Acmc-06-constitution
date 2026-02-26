@@ -48,7 +48,7 @@ a {
 
 .toc {
   line-height: 2;
-  text-align: right;
+  text-align: left;
 }
 
 /* Keep content above watermark */
@@ -271,7 +271,7 @@ nav a:focus-visible {
 
 .article p,
 .preamble p {
-  text-align: right;
+  text-align: left;
   /* margin-bottom: 3px; */
 }
 
