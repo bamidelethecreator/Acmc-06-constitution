@@ -271,7 +271,7 @@ nav a:focus-visible {
 
 .article p,
 .preamble p {
-  text-align: left;
+  text-align: justify;
   /* margin-bottom: 3px; */
 }
 
