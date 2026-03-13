@@ -45,6 +45,7 @@ a {
   border-right: 10px solid #0a4da2;
   line-height: 1.15;
   letter-spacing: 0.2px;
+  text-align: justify
 }
 
 .toc {
