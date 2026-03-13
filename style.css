@@ -41,11 +41,10 @@ a {
   padding: 0 70px 50px 70px;
   position: relative;
   overflow: hidden;
-  border-left: 10px solid #0a4da2;
-  border-right: 10px solid #0a4da2;
+  border-left: 10px solid yellow;
+  border-right: 10px solid yellow;
   line-height: 1.15;
-  letter-spacing: 0.2px;
-  text-align: justify
+  text-align: justify;
 }
 
 .toc {
