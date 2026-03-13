@@ -18,7 +18,7 @@ body {
 }
 
 header {
-  padding-top: 20px; /* instead of margin-top */
+  padding-top: 20px;
 }
 
 img {
@@ -65,7 +65,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* full viewport height */
+  height: 100vh;
   background-color: blue;
   text-align: center;
   color: yellow;
@@ -73,11 +73,11 @@ a {
 }
 
 .cover-logo {
-  max-width: 300px; /* adjust size of logo */
+  max-width: 300px;
   width: auto;
   height: auto;
   margin-bottom: 10px;
-  border-radius: 15px; /* optional rounded corners */
+  border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -143,7 +143,6 @@ a {
   font-weight: normal;
 }
 
-/* Decorative divider */
 .article-header::after {
   content: "";
   display: block;
@@ -160,14 +159,37 @@ a {
 .cover::before {
   display: none;
 }
+
 .toc::before {
   opacity: 0.06;
 }
+
 .preamble::before {
   opacity: 0.08;
 }
+
 .article::before {
   opacity: 0.1;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.page footer {
+  width: 100%;
+  text-align: center;
+  color: #f4c430;
+  font-weight: bold;
+  margin-top: 40px;
+  padding-top: 15px;
+  border-top: 2px solid rgba(10, 77, 162, 0.2);
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.page footer p {
+  margin: 0;
+  text-align: center;
 }
 
 /* =========================
@@ -181,7 +203,6 @@ nav {
   flex-wrap: wrap;
 }
 
-/* Nav links as buttons */
 nav a {
   display: inline-flex;
   align-items: center;
@@ -201,46 +222,38 @@ nav a {
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
-  /* background 0.3s ease; */
 }
 
 button {
-  background: none; /* Remove default white background */
-  border: none; /* Remove default border if any */
-  color: white; /* Or any text color that contrasts your gradient */
+  background: none;
+  border: none;
+  color: white;
   padding: 10px 20px;
   cursor: pointer;
   font-size: 12px;
 }
 
 .button-left {
-  background: linear-gradient(to right, #c9b72f, #32537f); /* Your gradient */
+  background: linear-gradient(to right, #c9b72f, #32537f);
   border-radius: 7px;
 }
 
 .button-right {
-  background: linear-gradient(
-    to left,
-    #32537f,
-    #c9b72f
-  ); /* Opposite gradient */
+  background: linear-gradient(to left, #32537f, #c9b72f);
   border-radius: 7px;
 }
 
-/* Hover effect */
 nav a:hover {
   transform: translateY(-4px) scale(1.03);
   box-shadow: 0 10px 28px rgba(10, 77, 162, 0.35);
   background: linear-gradient(135deg, #083a7a, #f4c430);
 }
 
-/* Active (click) effect */
 nav a:active {
   transform: translateY(-1px) scale(0.98);
   box-shadow: 0 5px 14px rgba(10, 77, 162, 0.25);
 }
 
-/* Focus (keyboard accessibility) */
 nav a:focus-visible {
   outline: none;
   box-shadow: 0 0 0 4px rgba(244, 196, 48, 0.45);
@@ -273,7 +286,6 @@ nav a:focus-visible {
 .article p,
 .preamble p {
   text-align: justify;
-  /* margin-bottom: 3px; */
 }
 
 .article h1,
@@ -283,6 +295,7 @@ nav a:focus-visible {
   color: #0a4da2;
   text-align: center;
 }
+
 .article h3,
 .preamble h3 {
   margin-top: 0;
@@ -351,18 +364,19 @@ nav a:focus-visible {
   }
 
   .print-image {
-    display: block; /* Show the img when printing */
-    position: fixed; /* Position the image for printing */
+    display: block;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* ensures full-page coverage */
-    z-index: 0; /* Place it behind the content */
+    object-fit: cover;
+    z-index: 0;
   }
+
   .content {
     position: relative;
-    z-index: 1; /* Ensure content is above the image */
+    z-index: 1;
   }
 
   nav,
