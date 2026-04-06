@@ -2,15 +2,13 @@
    GLOBAL RESET & BASE
 ========================= */
 * {
-  box-sizing: border-box;
+  border-sizing: border-box;
 }
 
 html,
 body {
-  margin: 0;
-  padding: 0;
   width: 100%;
-  font-family: "Times New Roman", serif;
+  font-family: "Garamond", serif;
   background: #f2f6fc;
   color: #0b1f3a;
   max-width: 100%;
@@ -22,7 +20,7 @@ header {
 }
 
 img {
-  max-width: 100%;
+  max-width: auto;
   height: auto;
 }
 
