@@ -9,7 +9,6 @@
 
 html,
 body {
-  margin: 0;
   width: 100%;
   font-family: "Garamond", serif;
   background: #f2f6fc;
@@ -135,10 +134,12 @@ a {
 }
 
 .article-header h1 {
+  margin: 0;
   color: #0a4da2;
 }
 
 .article-header h2 {
+  margin: 0;
   color: #f4c430;
   font-weight: normal;
 }
