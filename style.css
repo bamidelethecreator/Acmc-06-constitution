@@ -2,11 +2,14 @@
    GLOBAL RESET & BASE
 ========================= */
 * {
-  border-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html,
 body {
+  margin: 0;
   width: 100%;
   font-family: "Garamond", serif;
   background: #f2f6fc;
@@ -28,6 +31,7 @@ button,
 a {
   min-height: 44px;
   text-decoration: none;
+  text-align: center;
 }
 
 /* =========================
@@ -131,12 +135,10 @@ a {
 }
 
 .article-header h1 {
-  margin: 0;
   color: #0a4da2;
 }
 
 .article-header h2 {
-  margin: 8px 0 0;
   color: #f4c430;
   font-weight: normal;
 }
@@ -186,7 +188,6 @@ a {
 }
 
 .page footer p {
-  margin: 0;
   text-align: center;
 }
 
